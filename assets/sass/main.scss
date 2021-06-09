@@ -1,0 +1,25 @@
+// main.scss # Manifest File
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// abstracts
+@import 'abstracts/variables'; 
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset'; 
+@import 'base/typography'; 
+@import 'base/base'; 
+
+// Layout
+// @import 'layout/grid';
+@import 'layout/navbar';
+@import 'layout/banner';
+@import 'layout/profile';
+@import 'layout/main';
+
+// Components
+@import 'components/mybuttons'; //pendiente
+// @import 'components/inputs'; //pendiente
+
+// Pages
+// Theme

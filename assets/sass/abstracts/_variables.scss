@@ -1,0 +1,14 @@
+$bg-white: #ffffff;
+$isabeline: #ECECEC;
+$lightgray: #d1d1d1;
+$smokyblack: #0c0910;
+$granitegray: #646266;
+$quicksilver: #a6a5a8;
+
+
+$breakpoints: (
+  'medium': (min-width: 576px),
+  'large': (min-width: 768px),
+  'huge': (min-width: 992px),
+  'x-huge': (min-width: 1200px)
+);
