@@ -10757,13 +10757,25 @@ body {
   font-weight: 400;
   position: absolute;
 }
+.navbar__menu {
+  display: flex;
+}
 .navbar__item {
   display: none;
 }
 .navbar__item--fixed {
   display: block;
+  font-size: 2em;
 }
 
+@media (min-width: 768px) {
+  .navbar__item, .navbar__item--fixed {
+    display: flex;
+    color: #001514;
+    font-size: 1.1em;
+    margin: 0 0.5em;
+  }
+}
 .banner {
   background-image: url("../img/image-banner.png");
   height: 4.25em;
@@ -10771,7 +10783,12 @@ body {
   background-size: cover;
 }
 
-.profile {
+@media (min-width: 768px) {
+  .banner {
+    height: 11.8em;
+  }
+}
+.profile__name {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10804,18 +10821,29 @@ body {
   margin: -0.25em 0 0 0;
 }
 
+@media (min-width: 768px) {
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 2em;
+  }
+  .profile__name {
+    display: flex;
+  }
+}
+.main {
+  padding-bottom: 4em;
+}
 .main__title {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4375em;
 }
 .main__content {
-  display: flex;
+  place-items: flex-start;
+  margin: 0;
   flex-direction: column;
-  align-items: center;
-}
-.main__article {
-  width: 80%;
 }
 .main__image {
   width: 100%;
@@ -10829,6 +10857,41 @@ body {
 .main__article-subtext {
   color: #646266;
   font-size: 0.875em;
+  margin: 0 0 1em 0;
+}
+
+@media (min-width: 768px) {
+  .main__title {
+    text-align: left;
+  }
+  .main__content {
+    flex-direction: row;
+  }
+  .main__image {
+    vertical-align: middle;
+    object-fit: cover;
+    max-height: 18vh;
+    object-position: center;
+  }
+}
+@media (min-width: 1200px) {
+  .main__image {
+    vertical-align: middle;
+    object-fit: cover;
+    max-height: 14vh;
+    object-position: center;
+  }
+}
+.button--primary {
+  color: #ffffff;
+  border-radius: 0;
+  background-color: #92dce5;
+}
+
+.button--secondary {
+  color: #ffffff;
+  border-radius: 0;
+  background-color: #ef6461;
 }
 
 /*# sourceMappingURL=main.css.map */

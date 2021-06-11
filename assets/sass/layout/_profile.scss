@@ -1,7 +1,12 @@
 .profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__image {
     display: inline-block;
@@ -29,6 +34,17 @@
     color: $quicksilver;
     font-size: $x-small;
     margin: -0.25em 0 0 0;
-  
+  }
+}
+@include respond-to("md") {
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 2em;
+
+    &__name {
+      display: flex;
+    }
   }
 }

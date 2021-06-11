@@ -15,11 +15,25 @@
     position: absolute;
   }
   &__menu {
+    display: flex;
   }
   &__item {
     display: none;
   }
   &__item--fixed {
     display: block;
+    font-size: $xi-large;
+  }
+}
+
+@include respond-to("md") {
+  .navbar {
+    &__item, &__item--fixed {
+      display: flex;
+      color: $blackish;
+      font-size: $nn-medium;
+      margin: 0 0.5em;
+    }
+
   }
 }

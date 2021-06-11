@@ -8,14 +8,16 @@
   <script src="https://kit.fontawesome.com/36950a24e5.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Gigeo</title>
 </head>
 
 <body>
 
-  <nav class="navbar px-5">
+  <nav class="container navbar px-4">
     <div class="navbar__logo">
       <p class="navbar__logo--big">GIGEO
         <span class="navbar__logo--small">ART</span>
@@ -23,77 +25,85 @@
     </div>
 
     <div class="navbar__menu">
-      <i class="fas fa-search fa-2x navbar__item"></i>
-      <i class="fas fa-video fa-2x navbar__item"></i>
-      <i class="fas fa-plus fa-2x navbar__item"></i>
-      <i class="far fa-bell fa-2x navbar__item"></i>
-      <i class="fas fa-bars fa-2x navbar__item--fixed"></i>
+      <i class="fas fa-search navbar__item"></i>
+      <i class="fas fa-video navbar__item"></i>
+      <i class="fas fa-plus navbar__item"></i>
+      <i class="far fa-bell navbar__item"></i>
+      <i class="fas fa-bars navbar__item--fixed"></i>
     </div>
   </nav>
 
   <section class="banner">
   </section>
 
-  
-  <section class="profile mt-2 mb-3">
-    <div class="profile__image">
-      <img src="assets/img/profile-image.png" class="profile__image--rounded" alt="">
+
+  <section class="profile container mt-2 mb-3 justify-content-between">
+    <div class="profile__name">
+
+      <div class="profile__image">
+        <img src="assets/img/profile-image.png" class="profile__image--rounded" alt="">
+      </div>
+      <div class="profile__text">
+        <p class="profile__title">Yuki Mukami</p>
+        <p class="profile__description">30.000 seguidores</p>
+      </div>
     </div>
-    <div class="profile__text">
-      <p class="profile__title">Yuki Mukami</p>
-      <p class="profile__description">30.000 seguidores</p>
+
+    <div class="profile__buttons d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+      <button class="btn button--primary">Mensaje</button>
+      <button class="btn button--secondary">Seguir</button>
     </div>
   </section>
-  
-  <!-- <div class="container"> -->
-    <section class="main">
+  <hr class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+
+  <section class="main container">
+
+    <div class="row main__content mx-2">
       <p class="main__title my-4">Videos populares</p>
-   
-      <div class="main__content">
-        <article class="main__article">
-          <img src="assets/img/image-1.png" class="main__image" alt="">
-          <p class="main__article-text">Después de la vela - Yuki
-            Mukami</p>
-          <p class="main__article-subtext">16k vistas - 1 semana atrás</p>
-        </article>
-        <article class="main__article">
-          <img src="assets/img/image-2.png" class="main__image" alt="">
-          <p class="main__article-text">Far Away - Yuki Mukami</p>
-          <p class="main__article-subtext">100k vistas - 1 mes atrás</p>
-        </article>
-        <article class="main__article">
-          <img src="assets/img/image-3.png" class="main__image" alt="">
-          <p class="main__article-text">City - Yuki Mukami</p>
-          <p class="main__article-subtext">20k vistas - 1 mes atrás</p>
-        </article>
-        <article class="main__article">
-          <img src="assets/img/image-4.png" class="main__image" alt="">
-          <p class="main__article-text">A Yuki Tale - Yuki Mukami</p>
-          <p class="main__article-subtext">1m vistas - 1 año atrás</p>
-        </article>
-        <article class="main__article">
-          <img src="assets/img/image-5.png" class="main__image" alt="">
-          <p class="main__article-text">Mapocho - Yuki Mukami</p>
-          <p class="main__article-subtext">100k vistas - 1 mes atrás</p>
-        </article>
-        <article class="main__article">
-          <img src="assets/img/image-6.png" class="main__image" alt="">
-          <p class="main__article-text">Luky Days - Yuki Mukami</p>
-          <p class="main__article-subtext">40k vistas - 3 meses atrás</p>
-        </article>
-        <article class="main__article">
-          <img src="assets/img/image-7.png" class="main__image" alt="">
-          <p class="main__article-text">30 days in My House</p>
-          <p class="main__article-subtext">10k vistas - 4 meses atrás</p>
-        </article>
-        <article class="main__article">
-          <img src="assets/img/image-8.png" class="main__image" alt="">
-          <p class="main__article-text">Santiago - Yuki Mukami</p>
-          <p class="main__article-subtext">40k vistas - 3 meses atrás</p>
-        </article>
-      </div>
-    </section>
-  <!-- </div> -->
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-1.png" class="main__image" alt="">
+        <p class="main__article-text">Después de la vela - Yuki
+          Mukami</p>
+        <p class="main__article-subtext">16k vistas - 1 semana atrás</p>
+      </article>
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-2.png" class="main__image" alt="">
+        <p class="main__article-text">Far Away - Yuki Mukami</p>
+        <p class="main__article-subtext">100k vistas - 1 mes atrás</p>
+      </article>
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-3.png" class="main__image" alt="">
+        <p class="main__article-text">City - Yuki Mukami</p>
+        <p class="main__article-subtext">20k vistas - 1 mes atrás</p>
+      </article>
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-4.png" class="main__image" alt="">
+        <p class="main__article-text">A Yuki Tale - Yuki Mukami</p>
+        <p class="main__article-subtext">1m vistas - 1 año atrás</p>
+      </article>
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-5.png" class="main__image" alt="">
+        <p class="main__article-text">Mapocho - Yuki Mukami</p>
+        <p class="main__article-subtext">100k vistas - 1 mes atrás</p>
+      </article>
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-6.png" class="main__image" alt="">
+        <p class="main__article-text">Luky Days - Yuki Mukami</p>
+        <p class="main__article-subtext">40k vistas - 3 meses atrás</p>
+      </article>
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-7.png" class="main__image" alt="">
+        <p class="main__article-text">30 days in My House</p>
+        <p class="main__article-subtext">10k vistas - 4 meses atrás</p>
+      </article>
+      <article class="col col-md-6 col-xl-3 align-content-stretch main__article">
+        <img src="assets/img/image-8.png" class="main__image" alt="">
+        <p class="main__article-text">Santiago - Yuki Mukami</p>
+        <p class="main__article-subtext">40k vistas - 3 meses atrás</p>
+      </article>
+    </div>
+  </section>
+
 
 </body>
 

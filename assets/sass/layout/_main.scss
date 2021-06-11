@@ -1,16 +1,14 @@
 .main {
+  padding-bottom: 4em;
   &__title {
     text-align: center;
     font-family: $montserrat;
     font-size: $xx-large;
   }
   &__content {
-    display: flex;
+    place-items: flex-start;
+    margin: 0;
     flex-direction: column;
-    align-items: center;
-  }
-  &__article {
-    width: 80%;
   }
   &__image {
     width: 100%;
@@ -20,11 +18,38 @@
     font-weight: $bold-typo;
     font-size: $nn-medium;
     margin: 0.5em 0;
-
   }
   &__article-subtext {
     color: $granitegray;
     font-size: $x-small;
+    margin: 0 0 1em 0;
+  }
+}
 
+@include respond-to("md") {
+  .main {
+    &__title {
+      text-align: left;
+    }
+    &__content {
+      flex-direction: row;
+    }
+    &__image {
+      vertical-align: middle;
+      object-fit: cover;
+      max-height: 18vh;
+      object-position: center;
+    }
+  }
+}
+
+@include respond-to("xl") {
+  .main {
+    &__image {
+      vertical-align: middle;
+      object-fit: cover;
+      max-height: 14vh;
+      object-position: center;
+    }
   }
 }
