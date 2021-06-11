@@ -17,33 +17,39 @@
 
   <nav class="navbar px-5">
     <div class="navbar__logo">
-      <p class="navbar__logo--big">GIGEO<span class="navbar__logo--small">ART</span></p>
+      <p class="navbar__logo--big">GIGEO
+        <span class="navbar__logo--small">ART</span>
+      </p>
     </div>
 
     <div class="navbar__menu">
-      <i class="fas fa-search navbar__item"></i>
-      <i class="fas fa-video navbar__item"></i>
-      <i class="fas fa-plus navbar__item"></i>
-      <i class="far fa-bell navbar__item"></i>
-      <i class="fas fa-bars navbar__item--fixed"></i>
+      <i class="fas fa-search fa-2x navbar__item"></i>
+      <i class="fas fa-video fa-2x navbar__item"></i>
+      <i class="fas fa-plus fa-2x navbar__item"></i>
+      <i class="far fa-bell fa-2x navbar__item"></i>
+      <i class="fas fa-bars fa-2x navbar__item--fixed"></i>
     </div>
   </nav>
 
   <section class="banner">
   </section>
 
-  <div class="container">
-
-    <section class="profile">
-      <img src="assets/img/profile-image.png" class="profile__image" alt="">
+  
+  <section class="profile mt-2 mb-3">
+    <div class="profile__image">
+      <img src="assets/img/profile-image.png" class="profile__image--rounded" alt="">
+    </div>
+    <div class="profile__text">
       <p class="profile__title">Yuki Mukami</p>
       <p class="profile__description">30.000 seguidores</p>
-    </section>
-
+    </div>
+  </section>
+  
+  <!-- <div class="container"> -->
     <section class="main">
-      <p class="main__title">Videos populares</p>
+      <p class="main__title my-4">Videos populares</p>
    
-      <div class="row">
+      <div class="main__content">
         <article class="main__article">
           <img src="assets/img/image-1.png" class="main__image" alt="">
           <p class="main__article-text">Después de la vela - Yuki
@@ -87,7 +93,7 @@
         </article>
       </div>
     </section>
-  </div>
+  <!-- </div> -->
 
 </body>
 

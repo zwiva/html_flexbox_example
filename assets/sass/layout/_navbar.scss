@@ -1,21 +1,25 @@
 .navbar {
-  height: 15vh;
+  height: 10vh;
   &__logo {
-    font-family: $poppins;
-    font-size: $xxx-large;
-    font-weight: $semi-bold;
+    position: relative;
   }
   &__logo--big {
+    font-family: $poppins;
+    font-size: $xxx-large;
+    font-weight: $regular;
+    margin: 0;
   }
   &__logo--small {
-    font-size: $xx-small;
-
-
+    font-size: $xxx-small;
+    font-weight: $regular;
+    position: absolute;
   }
   &__menu {
   }
   &__item {
+    display: none;
   }
   &__item--fixed {
+    display: block;
   }
 }
